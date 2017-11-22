@@ -538,6 +538,16 @@ border-image: linear-gradient(to right, #4632ab 0%, #48c524 100%) !important;
     color: #4632AB;
 }
 
+#category-posts-2-internal li {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#category-posts-2-internal li a:first-child {
+    width:75%;
+    padding-right: 10px;
+}
+
 @media (max-width:500px) {
 	article.post .bottom-order {
     width:100% !important;
@@ -661,16 +671,24 @@ article.post img {
     align-items: center;
     width: 100%;
     background: whitesmoke url('../images/bgbottomtr-min.png') bottom left repeat-x;
-    min-height: 400px;
-    height:400px;
+    min-height: 120px;
+    height:auto;
     color: black;
     transition: height 1.5s linear;
+}
+
+.head-container>div>h1 {
+    margin-top:130px;
 }
 
 
 .head-container h1,.head-container h2
 {
     color: black;
+}
+
+#header-1 .main-nav {
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.5);
 }
 
 li.widget
@@ -681,6 +699,14 @@ li.widget
 aside
 {
     margin-top: 25px;
+}
+
+aside h3.widgettitle {
+    background: linear-gradient(to right, rgb(70, 50, 171), rgb(255, 255, 255));
+    padding: 5px;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    font-size:1.5em;
 }
 
 .img-preview

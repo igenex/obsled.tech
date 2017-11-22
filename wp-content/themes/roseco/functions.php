@@ -1104,6 +1104,16 @@ if (!function_exists('roseco_customize_register')):
 			'title' => __('Клиенты', 'roseco'),
 		));
 
+		$wp_customize->add_setting( 'icon_href', array(
+        	'type' => 'theme_mod'
+    	));
+
+    	$wp_customize->add_control( 'icon_href', array(
+        	'label' => __( 'Ссылка на логотип', 'roseco' ),
+        	'type' => 'url',
+        	'section' => 'clients'
+    	));
+
 		$wp_customize->add_setting('clients_logo1', array(
 			'type' => 'theme_mod',
 		));
@@ -1114,6 +1124,16 @@ if (!function_exists('roseco_customize_register')):
 			'mime_type' => 'image',
 			'section' => 'clients',
 		)));
+
+		$wp_customize->add_setting( 'icon_href2', array(
+        	'type' => 'theme_mod'
+    	));
+
+    	$wp_customize->add_control( 'icon_href2', array(
+        	'label' => __( 'Ссылка на логотип', 'roseco' ),
+        	'type' => 'url',
+        	'section' => 'clients'
+    	));
 
 		$wp_customize->add_setting('clients_logo2', array(
 			'type' => 'theme_mod',
@@ -1126,6 +1146,16 @@ if (!function_exists('roseco_customize_register')):
 			'section' => 'clients',
 		)));
 
+		$wp_customize->add_setting( 'icon_href3', array(
+        	'type' => 'theme_mod'
+    	));
+
+    	$wp_customize->add_control( 'icon_href3', array(
+        	'label' => __( 'Ссылка на логотип', 'roseco' ),
+        	'type' => 'url',
+        	'section' => 'clients'
+    	));
+
 		$wp_customize->add_setting('clients_logo3', array(
 			'type' => 'theme_mod',
 		));
@@ -1136,6 +1166,16 @@ if (!function_exists('roseco_customize_register')):
 			'mime_type' => 'image',
 			'section' => 'clients',
 		)));
+
+		$wp_customize->add_setting( 'icon_href4', array(
+        	'type' => 'theme_mod'
+    	));
+
+    	$wp_customize->add_control( 'icon_href4', array(
+        	'label' => __( 'Ссылка на логотип', 'roseco' ),
+        	'type' => 'url',
+        	'section' => 'clients'
+    	));
 
 		$wp_customize->add_setting('clients_logo4', array(
 			'type' => 'theme_mod',
@@ -1148,6 +1188,16 @@ if (!function_exists('roseco_customize_register')):
 			'section' => 'clients',
 		)));
 
+		$wp_customize->add_setting( 'icon_href5', array(
+        	'type' => 'theme_mod'
+    	));
+
+    	$wp_customize->add_control( 'icon_href5', array(
+        	'label' => __( 'Ссылка на логотип', 'roseco' ),
+        	'type' => 'url',
+        	'section' => 'clients'
+    	));
+
 		$wp_customize->add_setting('clients_logo5', array(
 			'type' => 'theme_mod',
 		));
@@ -1158,6 +1208,16 @@ if (!function_exists('roseco_customize_register')):
 			'mime_type' => 'image',
 			'section' => 'clients',
 		)));
+
+		$wp_customize->add_setting( 'icon_href6', array(
+        	'type' => 'theme_mod'
+    	));
+
+    	$wp_customize->add_control( 'icon_href6', array(
+        	'label' => __( 'Ссылка на логотип', 'roseco' ),
+        	'type' => 'url',
+        	'section' => 'clients'
+    	));
 
 		$wp_customize->add_setting('clients_logo6', array(
 			'type' => 'theme_mod',
@@ -1689,7 +1749,7 @@ if (!function_exists('roseco_enqueue_scripts')):
 		wp_enqueue_style('blocks', get_template_directory_uri() . '/css/blocks.css', false, null, 'all');
 
 		wp_deregister_style('custom');
-		wp_enqueue_style('custom', get_template_directory_uri() . '/css/custom.css', false, null, 'all');
+		wp_enqueue_style('custom', get_template_directory_uri() . '/css/custom.css?v.1.1', false, null, 'all');
 
 		wp_deregister_style('style-3');
 		wp_enqueue_style('style-3', 'https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed|Scada', false, null, 'all');
